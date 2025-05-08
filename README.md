@@ -1,5 +1,8 @@
 ### ENCODER 8TO3 DATAFLOW Modelling
 
+## Developed by: K.Preetha
+## Register Number: 212224100044
+
 **AIM:**
 
 To implement  Encoder 8 To 3 in Dataflow Modelling using verilog and validating their functionality using their functional tables
@@ -35,21 +38,38 @@ Logical circuit of the above expressions is given below:
 Figure 02  Encoder 8 * 3
 
 **Procedure**
-
-/* write all the steps invloved */
-
+```
+1.Define the module and its ports
+2.Analyzing the Logic
+3.Write the dataflow modeling equations
+4.Simulating the module
+5.Reviewing and Adjusting Logic
+6.Finalizing the Design
+```
 **PROGRAM**
-
-/* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:
-*/
+```
+module EX5(din,a,b,c);
+input[0:7]din;
+output a;
+output b;
+output c;
+assign a= din[4]|din[5]|din[6]|din[7];
+assign b= din[2]|din[3]|din[6]|din[7];
+assign c= din[2]|din[4]|din[6]|din[7]; 
+endmodule
+```
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot 2025-05-08 083543](https://github.com/user-attachments/assets/29d56bb4-1146-47f1-abb1-0438c12a6b7a)
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot 2025-05-08 084819](https://github.com/user-attachments/assets/8607a68a-ed74-4068-a8f6-d5925117b045)
+
 **RESULTS**
+
+Therefore encoder 8 to 3 in dataflowing modeling using verilog and validating their functionality using their functional tables is verified.
 
 
 
